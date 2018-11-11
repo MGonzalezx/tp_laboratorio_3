@@ -219,3 +219,53 @@
 	<string.h>
 	"utn.h"
 
+1541902418 source:c:\users\martin\desktop\trabajo practico 1\tp_laboratorio_3\tp3\win_64\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"utn.h"
+
+1541902140 c:\users\martin\desktop\trabajo practico 1\tp_laboratorio_3\tp3\win_64\linkedlist.h
+
+1541902140 c:\users\martin\desktop\trabajo practico 1\tp_laboratorio_3\tp3\win_64\employee.h
+
+1541902140 c:\users\martin\desktop\trabajo practico 1\tp_laboratorio_3\tp3\win_64\parser.h
+
+1541902140 c:\users\martin\desktop\trabajo practico 1\tp_laboratorio_3\tp3\win_64\utn.h
+
+1541902140 source:c:\users\martin\desktop\trabajo practico 1\tp_laboratorio_3\tp3\win_64\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1541902140 c:\users\martin\desktop\trabajo practico 1\tp_laboratorio_3\tp3\win_64\controller.h
+
+1541902140 source:c:\users\martin\desktop\trabajo practico 1\tp_laboratorio_3\tp3\win_64\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1541902140 source:c:\users\martin\desktop\trabajo practico 1\tp_laboratorio_3\tp3\win_64\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"Controller.h"
+
+1541902140 source:c:\users\martin\desktop\trabajo practico 1\tp_laboratorio_3\tp3\win_64\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+

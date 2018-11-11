@@ -72,10 +72,12 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
         while(strlen(buffer)>128 ||!esSoloLetras(buffer))
         {
             printf("-----------------------------------------------------------\n"
-                   "                   Reingrese Nombre: "
-                   "-----------------------------------------------------------\n\n");
+                   "                   Reingrese Nombre\n");
             fflush(stdin);
+
+
             gets(buffer);
+            printf("-----------------------------------------------------------\n\n");
         }
         strcpy(miEmpleado->nombre, buffer);
 
@@ -85,16 +87,17 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
         while(miEmpleado->horasTrabajadas < 50 || miEmpleado->horasTrabajadas > 200)
         {
             printf("-----------------------------------------------------------\n"
-                   "        Error! Ingrese horas entre 50 y 200: "
+                   "        Error! Ingrese horas entre 50 y 200 \n"
                    "-----------------------------------------------------------\n\n");
             scanf("%d", &miEmpleado->horasTrabajadas);
+
         }
         printf("\nIngrese sueldo: ");
         scanf("%d", &miEmpleado->sueldo);
         while(miEmpleado->sueldo < 8000 || miEmpleado->sueldo > 1000000)
         {
             printf("-----------------------------------------------------------\n"
-                   "       Error! Ingrese sueldo entre 8000 y 1000000: "
+                   "       Error! Ingrese sueldo entre 8000 y 1000000 \n"
                    "-----------------------------------------------------------\n\n");
             scanf("%d", &miEmpleado->sueldo);
         }
@@ -365,7 +368,8 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
         int i;
 
         for(i=0; i<ll_len(pArrayListEmployee); i++)
-        {printf("%s  %14s  %16s  %6s\n", "Id", "Nombre", "Horas trabajadas", "Sueldo");
+        {
+            printf("%s  %14s  %16s  %6s\n", "Id", "Nombre", "Horas trabajadas", "Sueldo");
             Employee* empleado = (Employee*)ll_get(pArrayListEmployee, i);
             printf("%d         %s        %d         %d\n", empleado->id, empleado->nombre, empleado->horasTrabajadas, empleado->sueldo);
 
@@ -487,8 +491,8 @@ int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
         }
         fclose(pFile);
         printf("-----------------------------------------------------------\n"
-                   "      El archivo fue guardado exitosamente\n"
-                   "-----------------------------------------------------------\n\n");
+               "      El archivo fue guardado exitosamente\n"
+               "-----------------------------------------------------------\n\n");
     }
     return 1;
 }
@@ -518,8 +522,8 @@ int controller_saveAsBinary(char* path, LinkedList* pArrayListEmployee)
         }
         fclose(pFile);
         printf("-----------------------------------------------------------\n"
-                   "      El archivo fue guardado exitosamente\n"
-                   "-----------------------------------------------------------\n\n");
+               "      El archivo fue guardado exitosamente\n"
+               "-----------------------------------------------------------\n\n");
     }
 
 
